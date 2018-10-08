@@ -1,0 +1,149 @@
+/* Step 1 - Add a nice background */
+body {
+    background: #435555;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+/* Step 2 - Add a nice card style */
+.card {    
+    border:solid 3px black;
+    width: 2.45em;
+    height: 3.2em;
+    display: flex;
+    font-size: 3em;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin: 10px;
+    background-color: #ecf0f1;   
+}
+
+/* Step 3 - Add a nice hover effect */
+.card:hover {
+    border: solid 3px red;
+    transform: scale(1.1);
+    transition: 0.3s;
+    background-color: #fff;
+}
+
+/* Step 4 (+4 points) - Write a style for a flipped card */
+.card.flipped {       
+      opacity: 0;
+      transition : 0.5s !important;
+}
+
+/* Step 5 - Add a nice style to the message element */
+#message {
+    
+    text-align: center;
+    font-size:5em;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Step 6 - Add 5 more style changes... */
+/* 1) */
+#score{
+    font-size:2em;
+    text-align: center;
+    color: #eee;
+}
+/* 2) */
+#reset {
+    font-size: 2em;
+    border: none;
+    background-color: #a15e5e;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    margin: 10px auto;
+}
+
+/*3) */
+
+#reset:hover{
+    background-color: #c04b4b;
+    transition: 0.5s;
+    
+}
+
+#easy {
+    width: 250px;
+    font-size: 2em;
+    border: none;
+    background-color: #4cb34c;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+#easy:hover{
+    background-color: #28c242;
+    transition: 0.5s;
+    
+}
+
+#medium {
+    width: 250px;
+    font-size: 2em;
+    border: none;
+    background-color: #6172a1;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+#medium:hover{
+    background-color: #5663af;
+    transition: 0.5s;
+    
+}
+
+#hard {
+    width: 250px;
+    font-size: 2em;
+    border: none;
+    background-color: #a15e5e;
+    color: black;
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin: 10px auto;
+}
+
+#hard:hover{
+    background-color: #c04b4b;
+    transition: 0.5s;
+    
+}
+
+/* 4) */
+#cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* 5) */
+.rotated:not(:empty) {    
+    transform: rotateY(180deg);
+   
+}   
+
+.card > span 
+{
+    transform: rotateY(180deg);
+    position: absolute;
+   
+}
+
+
